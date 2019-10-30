@@ -31,20 +31,23 @@ body {
 	margin-right:5%;
 }
 
-header{
-	margin-top: -20px;
+header .logo {
+	margin-top: 3%;
+	float:left;
+	position: relative;
+	height: 100px;
+    width: 35%;
 }
 
-header h1 {
-	-webkit-user-select: none; /* Safari */        
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* IE10+/Edge */
-	user-select: none; /* Standard */
-	font-size: 5em;
-	color:white;
-	float: left;
-	font-family: 'sloth rounded';
+header .logo img {
+	width: 100%;
+	left: 0;
+	bottom: 0;
 	position: absolute;
+}
+
+header img:hover {
+	opacity: 0.2;
 }
 
 header a {
@@ -98,7 +101,7 @@ main h1{
 	font-size: 24px;
 	float:left;
 	position:absolute;
-	margin-top: 12px;
+	margin-top: 10px;
 }
 
 .featured {
@@ -120,7 +123,7 @@ main h1{
 
 .soon img, .archiveimg img {
 	float: right;
-	margin-top: -19px;
+	margin-top: -16px;
 	max-width: 20%;
 	border: 2px solid white;
     border-radius: 2px;
@@ -203,7 +206,7 @@ main h1{
 }
 
 .socials li {
-	width: 40%;
+	width: 400px;
 	margin-bottom: 1%;
 	margin-left: auto;
 	margin-right: auto;
@@ -245,7 +248,7 @@ main h1{
 	font-size: 36px;
 	display: block;
 	text-decoration: none;
-	width:40%;
+	width:400px;
 	margin-left: auto;
 	margin-right:auto;
 	content:"unpass 5559";
@@ -301,12 +304,12 @@ footer a:hover {
 }
 
 footer h1 {
-	-webkit-user-select: none; /* Safari */        
+	-webkit-user-select: none; /* Safari */ 
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* IE10+/Edge */
 	user-select: none; /* Standard */
 	margin: auto;
-	font-size: 20px;
+	font-size: 14px;
 	color:#212121;
 	font-family: "sloth rounded";
 }
@@ -318,7 +321,7 @@ footer ul {
 	list-style-type: none;
 	width: 90%;
 	font-family: Arial;
-	font-size: 12px;
+	font-size: 20px;
 }
 footer li {
 	margin-left:auto;
@@ -329,6 +332,15 @@ footer li {
 footer li a {
 	line-height: 2em;
 	display: block;
+}
+
+footer img {
+	width: 10%;
+	opacity: 0.2;
+}
+
+footer img:hover {
+	opacity: 0.5;
 }
 
 @media screen and (min-width: 1193px){
@@ -351,43 +363,48 @@ footer li a {
 @media screen and (min-width: 2009px){	
 	
 	.featured {
-	overflow:visible;
-	width: 75%;
-	margin-top: 38px;
-	padding-bottom: 42%;
-    position: relative;
-	float:left;
+		overflow:visible;
+		width: 75%;
+		margin-top: 38px;
+		padding-bottom: 42%;
+		position: relative;
+		float:left;
 	}
 }
 	
 @media screen and (max-width: 1092px){
 	
+	header .logo {
+		margin-top: 60px;
+		min-width: 70%;
+		float:none;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		bottom: 0;
+	}
+	
+	header {
+		margin-top: auto;
+		height: 5%;
+	}
+	
 	.projects h2 {
 		font-size: 20px;
 	}
-	
 
 	header hr{
 		margin-top: 0%;
 	}
-	header h1 {
-		margin-bottom: 2em;
-		width: 90%;
-		clear:both;
-		float:none;
-		display: inline-block;
-		text-align:center;
-		font-size: 5em;
-	}
+
 	nav {
-		margin-top: 130px;
+		margin-top: 10px;
 		width: 100%;
 		text-align: center;
 		
 	}
 	nav ul {
-		padding-left: 0;
-		
+		margin: 0;
 	}
 	
 	nav li {
@@ -410,14 +427,6 @@ footer li a {
 		width: 45%;
 	}
 	
-	.header h1 {
-		width: 90%;
-		clear:both;
-		float:none;
-		display: inline-block;
-		text-align:center;
-		font-size: 2em;
-	}
 	.featured {
 		width: 100%;
 	}
@@ -429,4 +438,39 @@ footer li a {
 	.soon img, .archiveimg img {
 		max-width: 100%;
 	}
+	
+	footer ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style-type: none;
+	width: 90%;
+	font-family: Arial;
+	font-size: 10px;
+}
+}
+
+@media screen and (max-width: 842px){
+	
+	nav ul {
+		padding: 0;
+    	list-style-type: none;
+	}
+	
+	nav li {
+		width: 100%;
+		line-height: 2em;
+		height:3em;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav li a {
+		font-family: 'PROLOGIK';
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	
 }
