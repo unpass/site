@@ -1,0 +1,432 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'sloth rounded';
+  src: url("sloth_rounded.ttf");
+}
+
+@font-face {
+  font-family: 'PROLOGIK';
+  src: url("PROLOGIK.TTF");
+}
+
+@font-face {
+  font-family: 'INTERGALACTIC';
+  src: url("INTERGALACTIC.TTF");
+}
+
+@font-face {
+  font-family: 'Play';
+  src: url("Play-Regular.ttf");
+}
+
+html {
+	height: auto;
+}
+
+body {
+	height: auto;
+	background: #000000;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+header{
+	margin-top: -20px;
+}
+
+header h1 {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	font-size: 5em;
+	color:white;
+	float: left;
+	font-family: 'sloth rounded';
+	position: absolute;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+header a:hover{
+	color: dimgrey;
+}
+
+header nav a:hover{
+	color: dimgrey;
+}
+nav {
+	margin-top: 90px;
+	float: right;
+}
+nav li {
+	float: left;
+	list-style-type: none;
+	text-align: center;
+	width: 8em;	
+	line-height: 2em;
+}
+nav li a {
+	display: block;
+	font-family: 'PROLOGIK' !important;
+	font-size: 11px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+nav li.active a{
+	font-weight:bold;
+	color:grey;
+}
+
+hr {
+	background-color: white;
+	border: 1px solid white;
+	border-radius: 1px;
+}
+
+header hr{
+	margin-top: 2%;
+}
+
+main h1{
+	font-size: 24px;
+	float:left;
+	position:absolute;
+	margin-top: 12px;
+}
+
+.featured {
+	overflow:visible;
+	width: 75%;
+	margin-top: 38px;
+	padding-bottom: 44%;
+    position: relative;
+	float:left;
+}
+
+.featured iframe {
+	float: left;
+	height: 100%;
+    position: absolute;
+    border: 2px solid white;
+
+}
+
+.soon img, .archiveimg img {
+	float: right;
+	margin-top: -19px;
+	max-width: 20%;
+	border: 2px solid white;
+    border-radius: 2px;
+}
+
+.projects {
+	color: white;
+}
+
+.projects h1 {
+	font-family: INTERGALACTIC;
+	float: right;
+}
+
+.projects p {
+	width: 50%;
+	font-family: Play;
+	float: right;
+	text-align: right;
+}
+
+.projects img {
+	width: 40%;
+	float: left;
+	border: 2px solid white;
+    border-radius: 2px;
+}
+
+.projects .mil-logo img {
+	width: 30%;
+	float:right;
+	border: none;
+}
+
+.projects h2 {
+	font-size: 36px;
+	font-family: INTERGALACTIC;
+	color: dimgrey;
+	float: right;
+}
+
+.archiveimg img {
+	float: right;
+}
+
+.archiveimg h2 {
+	float: right;
+}
+
+.archive {
+	text-align: center;
+}
+.archive img {
+	border: 2px solid white;
+	border-radius: 2px;
+	width: 31%;
+}
+
+.archive img:hover{
+	background: url("view.png") no-repeat;
+}
+
+.row {
+	color: white;
+	font-family: PROLOGIK;
+}
+
+.input {
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+.socials ul {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: white;
+	font-family: Play;
+	font-size: 36px;
+}
+
+.socials li {
+	width: 40%;
+	margin-bottom: 1%;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 36px;
+	list-style-type: none;
+	text-align: center;
+	color: #232323;
+}
+
+.socials a{
+	font-family: "INTERGALACTIC";
+	padding-left:5px;
+	padding-right:5px;
+	background-color:white;
+	color:black;
+	border: 2px solid white;
+	border-radius: 2px;
+	font-size: 36px;
+	display: block;
+	text-decoration: none;
+}
+
+.socials a:hover {
+	color: dimgray;
+}
+
+.discord:hover a{
+	display:none;
+}
+
+.discord:hover:before{
+	font-family: INTERGALACTIC;
+	padding-left:5px;
+	padding-right:5px;
+	color: dimgray;
+	background-color:white;
+	border: 2px solid white;
+	border-radius: 2px;
+	font-size: 36px;
+	display: block;
+	text-decoration: none;
+	width:40%;
+	margin-left: auto;
+	margin-right:auto;
+	content:"unpass 5559";
+}
+
+main h1, main h2 {
+	font-family: "INTERGALACTIC";
+	text-align: center;
+	padding-left:5px;
+	padding-right:5px;
+	background-color:white;
+	color:black;
+	float:left;
+	border: 2px solid white;
+	border-radius: 2px;
+}
+
+main h2 {
+	font-size: 1.2em;
+	float: right;
+}
+
+article h1{
+	font-family: "INTERGALACTIC";
+	color: white;
+	margin-top: 10px;
+}
+
+article h2{
+	color:  white;
+	font-family: "PROLOGIK";
+	font-size: 10px;
+	float: left;
+}
+
+article p {
+	color: white;
+	font-family: play; 
+}
+
+footer {
+	color:#212121;
+	text-align: center;
+}
+
+footer a {
+	color: #212121;
+	text-decoration: none;
+}
+
+footer a:hover {
+	color: dimgrey;
+}
+
+footer h1 {
+	-webkit-user-select: none; /* Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+	margin: auto;
+	font-size: 20px;
+	color:#212121;
+	font-family: "sloth rounded";
+}
+
+footer ul {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	list-style-type: none;
+	width: 90%;
+	font-family: Arial;
+	font-size: 12px;
+}
+footer li {
+	margin-left:auto;
+	margin-right:auto;
+	width: 10%;
+}
+
+footer li a {
+	line-height: 2em;
+	display: block;
+}
+
+@media screen and (min-width: 1193px){
+	.projects p {
+		font-size: 30px;
+	}
+	.archive img {
+		width: 15%;
+	}
+	.featured {
+	overflow:visible;
+	width: 75%;
+	margin-top: 38px;
+	padding-bottom: 42.2%;
+    position: relative;
+	float:left;
+	}
+}
+
+@media screen and (min-width: 2009px){	
+	
+	.featured {
+	overflow:visible;
+	width: 75%;
+	margin-top: 38px;
+	padding-bottom: 42%;
+    position: relative;
+	float:left;
+	}
+}
+	
+@media screen and (max-width: 1092px){
+	
+	.projects h2 {
+		font-size: 20px;
+	}
+	
+
+	header hr{
+		margin-top: 0%;
+	}
+	header h1 {
+		margin-bottom: 2em;
+		width: 90%;
+		clear:both;
+		float:none;
+		display: inline-block;
+		text-align:center;
+		font-size: 5em;
+	}
+	nav {
+		margin-top: 130px;
+		width: 100%;
+		text-align: center;
+		
+	}
+	nav ul {
+		padding-left: 0;
+		
+	}
+	
+	nav li {
+		width:24%;
+		display: inline-block;
+	}
+	nav li a {
+		font-family: 'PROLOGIK';
+		font-size: 20px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
+	
+	.projects p {
+		font-size: 12px;
+	}
+	
+	.archive img {
+		width: 45%;
+	}
+	
+	.header h1 {
+		width: 90%;
+		clear:both;
+		float:none;
+		display: inline-block;
+		text-align:center;
+		font-size: 2em;
+	}
+	.featured {
+		width: 100%;
+	}
+	
+	.featured iframe {
+		width: 100%;
+	}
+
+	.soon img, .archiveimg img {
+		max-width: 100%;
+	}
+}
