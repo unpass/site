@@ -129,6 +129,23 @@ main h1{
     border-radius: 2px;
 }
 
+.blog img {
+    border: 2px solid white;
+    border-radius: 2px;
+}
+
+.blog a:hover, .projects a:hover {
+    color: white;
+}
+
+.blog a:focus, .projects a:focus, {
+    color: grey;
+}
+
+.blog a, .projects a, {
+    color: grey;
+}
+
 .projects {
 	color: white;
 }
